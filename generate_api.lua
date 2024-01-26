@@ -1,3 +1,5 @@
+-- ^^~
+
 local math_ceil, math_floor = math.ceil, math.floor
 local table_insert, table_remove, table_concat, string_len = table.insert, table.remove, table.concat, string.len
 local client_log, client_color_log = client.log, client.color_log
@@ -7,10 +9,15 @@ local to_dump = {
 	"entity",
 	"ui",
     "utils",
+	--why we dont dump globals? - bc userdata
 	"render",
 	"math",
 	"table",
     "string",
+	"rage",
+	"network",
+	"json",
+	"files",
 	"materials"
 }
 
